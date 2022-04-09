@@ -1,0 +1,1 @@
+python train.py MCW_Net_small

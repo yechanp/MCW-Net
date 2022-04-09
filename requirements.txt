@@ -1,0 +1,140 @@
+absl-py==0.9.0
+addict==2.2.1
+astor==0.8.1
+attrs==19.3.0
+backcall==0.2.0
+bleach==3.1.5
+blessings==1.7
+certifi==2020.12.5
+cffi==1.14.0
+chardet==3.0.4
+click==7.1.2
+cloudpickle @ file:///tmp/build/80754af9/cloudpickle_1594141588948/work
+colorama==0.4.3
+contextlib2==0.6.0.post1
+coverage==5.2.1
+cycler==0.10.0
+Cython==0.29.21
+cytoolz==0.10.1
+dask @ file:///tmp/build/80754af9/dask-core_1596748257051/work
+decorator==4.4.2
+defusedxml==0.6.0
+entrypoints==0.3
+future==0.18.2
+gast==0.2.2
+google-pasta==0.2.0
+gpustat==0.6.0
+grpcio==1.27.2
+h5py @ file:///tmp/build/80754af9/h5py_1593454119955/work
+hyperopt==0.1.2
+idna==2.10
+imageio @ file:///tmp/build/80754af9/imageio_1594161405741/work
+importlib-metadata @ file:///tmp/build/80754af9/importlib-metadata_1593446408836/work
+ipykernel @ file:///tmp/build/80754af9/ipykernel_1596206598566/work/dist/ipykernel-5.3.4-py3-none-any.whl
+ipython @ file:///tmp/build/80754af9/ipython_1593447368578/work
+ipython-genutils==0.2.0
+jedi @ file:///tmp/build/80754af9/jedi_1596490743326/work
+Jinja2==2.11.2
+joblib==0.16.0
+json-tricks==3.15.2
+jsonschema @ file:///tmp/build/80754af9/jsonschema_1594363551272/work
+jupyter-client @ file:///tmp/build/80754af9/jupyter_client_1594826976318/work
+jupyter-core==4.6.3
+Keras==2.2.4
+Keras-Applications @ file:///tmp/build/80754af9/keras-applications_1594366238411/work
+Keras-Preprocessing==1.1.0
+kiwisolver==1.2.0
+lazy-import==0.2.2
+Lintel @ file:///home/conda/feedstock_root/build_artifacts/lintel_1595099390348/work
+Mako @ file:///home/conda/feedstock_root/build_artifacts/mako_1595925083607/work
+Markdown @ file:///tmp/build/80754af9/markdown_1597433218422/work
+MarkupSafe @ file:///tmp/build/80754af9/markupsafe_1594371495811/work
+matplotlib==3.3.0
+memcnn==1.4.0
+mish-cuda==0.0.3
+mistune @ file:///tmp/build/80754af9/mistune_1594373098390/work
+mkl-fft==1.1.0
+mkl-random==1.1.1
+mkl-service==2.3.0
+mmcv==0.6.0
+-e git+https://github.com/open-mmlab/mmdetection.git@0f33c08d8d46eba8165715a0995841a975badfd4#egg=mmdet
+-e git+https://github.com/open-mmlab/mmskeleton.git@fcbeabf08072a821f20ecab18daca07e7d55b0eb#egg=mmskeleton
+natsort==7.1.1
+nb-conda-kernels==2.2.3
+nbconvert @ file:///tmp/build/80754af9/nbconvert_1594376811065/work
+nbformat==5.0.7
+netifaces==0.10.9
+networkx @ file:///tmp/build/80754af9/networkx_1594377231366/work
+-e git+https://github.com/open-mmlab/mmskeleton.git@fcbeabf08072a821f20ecab18daca07e7d55b0eb#egg=nms
+nni==1.7.1
+notebook==6.0.3
+numpy==1.20.3
+nvidia-ml-py3==7.352.0
+olefile==0.46
+opencv-python==4.3.0.36
+packaging==20.4
+pandas==1.1.1
+pandocfilters==1.4.2
+parso==0.7.0
+pathlib2==2.3.5
+pexpect @ file:///tmp/build/80754af9/pexpect_1594383317248/work
+pickleshare @ file:///tmp/build/80754af9/pickleshare_1594384075987/work
+Pillow @ file:///tmp/build/80754af9/pillow_1594307325547/work
+pkginfo==1.5.0.1
+prometheus-client==0.8.0
+prompt-toolkit==3.0.5
+protobuf==3.12.4
+psutil==5.7.2
+ptyprocess==0.6.0
+pycocotools==2.0.1
+pycparser @ file:///tmp/build/80754af9/pycparser_1594388511720/work
+Pygments==2.6.1
+pygpu==0.7.6
+pymongo==3.11.0
+pyparsing==2.4.7
+pyrsistent==0.16.0
+python-dateutil==2.8.1
+PythonWebHDFS==0.2.3
+Pytorch-QNN @ file:///home/ychpark/Pytorch-Quaternion-Neural-Networks
+pytz==2020.1
+PyWavelets==1.1.1
+PyYAML==5.3.1
+pyzmq==19.0.1
+requests==2.24.0
+ruamel.yaml==0.16.10
+ruamel.yaml.clib==0.2.0
+schema==0.7.2
+scikit-image==0.16.2
+scikit-learn==0.21.3
+scipy==1.5.2
+Send2Trash==1.5.0
+SimpleITK==1.2.4
+simplejson==3.17.2
+sip==4.19.23
+six==1.15.0
+tensorboard==1.14.0
+tensorboardX==2.1
+tensorflow==1.14.0
+tensorflow-estimator==1.14.0
+termcolor==1.1.0
+terminado==0.8.3
+terminaltables==3.1.0
+testpath==0.4.4
+Theano==1.0.3
+toolz==0.10.0
+torch==1.2.0
+torchsummary==1.5.1
+torchvision==0.4.0a0+6b959ee
+tornado==6.0.4
+tqdm==4.48.0
+traitlets==4.3.3
+urllib3==1.25.10
+warmup-scheduler==0.3
+wcwidth @ file:///tmp/build/80754af9/wcwidth_1593447189090/work
+webencodings==0.5.1
+websockets==8.1
+Werkzeug==1.0.1
+wrapt==1.12.1
+yacs==0.1.5
+yapf==0.30.0
+zipp==3.1.0
