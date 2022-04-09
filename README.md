@@ -19,8 +19,6 @@ A recent line of convolutional neural network-based works has succeeded in captu
 ## Usage
 
 ### Pretrained weights
-Download the weights in https://drive.google.com/drive/folders/1_Dkr4CAPxWHbkOU7PIV3gbg9-oqotWRI?usp=sharing
-
 ### Training
 
 
