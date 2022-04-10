@@ -10,7 +10,6 @@ import time, math
 import numpy as np
 import h5py
 from torchsummary import summary
-import config_small as config 
 from torch_ssim import SSIM
 import shutil
 
@@ -21,6 +20,11 @@ print(args)
 Net_name = args[1]
 module = __import__(Net_name)
 Net    = module.Net
+
+config = args[2]
+config = __import__(config)
+# import config_small as config 
+
 
 
 # Training settings

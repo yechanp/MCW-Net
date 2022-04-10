@@ -7,6 +7,8 @@ import dataset
 import config_test as config
 from skimage.measure import compare_ssim as cal_ssim
 import cv2
+
+
 parser = argparse.ArgumentParser(description="MCW Net")
 parser.add_argument("--cuda", action="store_true", help="Use cuda? Default: True")
 parser.add_argument("--model1", default=" ", type=str, help="Model path")
@@ -15,14 +17,19 @@ parser.add_argument("--result", default= './result', type=str, help="Result path
 parser.add_argument("--att", default=1, type=int, help="output include attention")
 parser.add_argument("--use_gt", default=1, type=int, help="use gt or not")
 parser.add_argument("--save_img", default=1, type=int, help="save image or not")
+parser.add_argument("--model_name", default="MCW_Net_small", type=str, help="net name")
 
 #=================================================================================================================
+# model_name = "MCW_Net_small"
 model_name = "MCW_Net_small"
 # test_dataset = config.test_dataset.lower() # set in config
 #=================================================================================================================
 
 
 opt = parser.parse_args()
+# model_name = opt.model_name
+# module    = __import__(model_name)
+# model1       = module.Net
 CROP_ONCE = False
 SAVE_IMG  = opt.save_img
 USE_GT    = opt.use_gt
@@ -132,8 +139,9 @@ def infer_image(input,MAX_SIZE=2048,CROP_SIZE=512):
         canvas = canvas / patched_area
     
     else:
-        rh = th -   ( int( (th-1)//64)* 64 )
-        rw = tw -   ( int( (tw-1)//64)* 64 )
+        rh = th -   ( int( (th-1)//32)* 32 )
+        rw = tw -   ( int( (tw-1)//32)* 32 )
+        # print('rh',rh,rw)
     
         canvas = np.zeros_like(input)
         strip_area    = np.zeros_like(canvas,dtype=np.int16)

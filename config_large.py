@@ -7,6 +7,7 @@ train_repo_dic ={
             'rain100h': 100, #100
             'rain100l': 100,
             'spadata' : 1000,#1000,
+            'Rain1400': 1000,
             'Rain1200': 1000,
             'Rain800' : 100,
             'Cityscape':1000,
@@ -19,6 +20,7 @@ eval_repo_dic ={
             'rain100h_old': 1000,
             'rain100l_old': 1000,
             'spadata': 10000,#10000,
+            'Rain1400': 10000,
             'Rain1200': 10000,
             'Rain800' : 1000,
             'Cityscape':10000,
@@ -51,7 +53,7 @@ train_dataset = rain100h, rain100l, spadata
 test_dataset = rain100h, rain100l, rain100h_old, rain100l_old, spadata
 """
 train_dataset = "rain100h"   #default = "rain100h"
-test_dataset  = "RainDrop"   #default = "rain100h"
+test_dataset  = "rain100h"   #default = "rain100h"
 eval_dataset  = "rain100h"   #default = "rain100h"
 
 #Log
@@ -83,27 +85,32 @@ weight_decay = 1e-3         #default: 1e-3
 
 #Learning rate Scheduling
 
-
-############################## tiny #################################
-step = 200 #40 # 200
-lr = 5e-4
-nEpochs = 500 #200 #400
-SAVE_EPOCHS = [100,150,200,250,300,350,400,425,450,460,470,480,490,499,500]
-
-if train_dataset in ["Rain1400","Rain1200","Cityscape"]:
-    nEpochs = 100
-    step = 30
-    SAVE_EPOCHS = [10,20,30,40,50,60,70,80,90,100]
+lr = 1e-4
+step = 100
+nEpochs = 250
+SAVE_EPOCHS = [100,110,120,130,140,150,160,170,180,190,200,210,220,230,240,249,250]
 
 if train_dataset in ["spadata"]:
-    nEpochs = 5
-    lr = 5e-4 #5e-4
     step = 1 
-    SAVE_EPOCHS =[1,2,3,4,5]   
-if train_dataset in ['RainDrop']:
-    step = 300
-    nEpochs = 750
-    SAVE_EPOCHS = [200,400,600,700,710,720,730,740,749,750]    
+    nEpochs = 3
+    SAVE_EPOCHS =[1,2,3]    
+elif train_dataset in ["Rain1400","Rain1200","Cityscape"]:
+    step = 30
+    nEpochs = 100
+    SAVE_EPOCHS = [10,20,30,40,50,60,70,80,90,100]
+elif train_dataset in ['rain100h','rain100l','Rain800']:
+    step = 100
+    nEpochs = 250
+    SAVE_EPOCHS = [100,110,120,130,140,150,160,170,180,190,200,210,220,230,240,249,250]
+elif train_dataset in ['RainDrop']:
+    step = 200
+    nEpochs = 500
+    SAVE_EPOCHS = [100,150,200,250,300,350,400,425,450,460,470,480,490,499,500]
+else:
+    assert 1==2
+
+
+
 
 ########################################################################
 def learning_rate_scheduling(epoch, lr):
