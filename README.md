@@ -21,13 +21,18 @@ A recent line of convolutional neural network-based works has succeeded in captu
 ### Training
 In train.sh file, the code is like
 ``` python train.py MCW_Net_large config_large ```
+
+
 If you would like to train the small model, please change to 
 ``` python train.py MCW_Net_small config_small ```
+
+
 If you would like to change the dataset, please change this part in config_small.py or config_large.py file
 ``` 
 train_dataset = "rain100h"
 test_dataset  = "rain100h"
 ``` 
+
 
 And please run: 
 ``` sh train.sh ```
