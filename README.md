@@ -15,6 +15,15 @@ A recent line of convolutional neural network-based works has succeeded in captu
 
 
 ## Dataset Preparation
+Please download the datasets
+Rain200H, Rain200L : https://www.icst.pku.edu.cn/struct/Projects/joint_rain_removal.html
+Rain800            : https://github.com/hezhangsprinter/ID-CGAN
+Rain120            : https://github.com/hezhangsprinter/DID-MDN
+SPA-DATA           : https://stevewongv.github.io/
+RainCityScape      : https://www.cityscapes-dataset.com/
+RainDrop           : https://github.com/rui1996/DeRaindrop
+
+After downloading datasets, please change the dataset directories in the config file.
 
 ## Usage
 
@@ -40,4 +49,6 @@ And please run:
 ### Testing 
 Please run test.sh 
 If you would like to change the test dataset, please change this part in config_test.py
+
+
 ``` eval_dataset  = "rain100h"   ```
