@@ -3,6 +3,7 @@
 
 
 # MCW-Net: Single Image Deraining with Multi-level Connections and Wide Regional Non-local Blocks
+https://www.sciencedirect.com/science/article/pii/S0923596522000431
 
 ## Abstract
 
